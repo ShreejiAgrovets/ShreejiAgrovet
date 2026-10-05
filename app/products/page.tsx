@@ -3,39 +3,52 @@ import Hero from '../../components/Hero'
 const products = [
     {
         name: 'Premium Biscuit Mix',
-        description: 'High-energy feed supplement with high protein content. Made from quality biscuit waste, perfect for dairy cattle nutrition.',
+        description:
+            'High-energy feed supplement with high protein content. Made from quality biscuit waste, perfect for dairy cattle nutrition.',
         image: '/biscuit1.jpg',
         protein: '22%',
         category: 'Premium'
     },
     {
         name: 'Assorted Snack Blend',
-        description: 'Balanced nutrition mix combining various snack materials, bread, and muesli for comprehensive cattle feed.',
+        description:
+            'Balanced nutrition mix combining various snack materials, bread, and muesli for comprehensive cattle feed.',
         image: '/biscuit3.jpg',
         protein: '20%',
         category: 'Standard'
     },
     {
         name: 'Protein-Enriched Formula',
-        description: 'Enhanced with additional protein powders for maximum growth and milk production in high-performance cattle.',
+        description:
+            'Enhanced with additional protein powders for maximum growth and milk production in high-performance cattle.',
         image: '/mix.jpg',
         protein: '28%',
         category: 'Premium'
     },
     {
         name: 'Economic Feed Mix',
-        description: 'Cost-effective solution for bulk feeding requirements without compromising on essential nutrients.',
+        description:
+            'Cost-effective solution for bulk feeding requirements without compromising on essential nutrients.',
         image: '/biscuit2.jpg',
         protein: '18%',
         category: 'Economy'
     },
     {
         name: 'Custom Blend',
-        description: 'Tailored formulations based on your specific requirements, protein levels, and budget constraints.',
+        description:
+            'Tailored formulations based on your specific requirements, protein levels, and budget constraints.',
         image: '/grind.jpg',
         protein: 'Custom',
         category: 'Custom'
     },
+    {
+        name: 'Feed Production Video',
+        description:
+            'See our cattle feed mix production process in action.',
+        video: '/biscuit_video.mp4',
+        category: 'Video',
+        isVideo: true
+    }
 ]
 
 export default function ProductsPage() {
@@ -49,59 +62,139 @@ export default function ProductsPage() {
 
             <section className="container mx-auto py-16 px-4">
                 <div className="max-w-6xl mx-auto">
+
+                    {/* Introduction */}
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold mb-4 text-gray-800">Custom Feed Formulations</h2>
+                        <h2 className="text-3xl font-bold mb-4 text-gray-800">
+                            Custom Feed Formulations
+                        </h2>
+
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We specialize in creating customized cattle feed mix using premium ingredients including biscuit waste,
-                            bread, muesli, protein powders, and various snack materials. Each formulation is designed to meet
+                            We specialize in creating customized cattle feed mix using premium
+                            ingredients including biscuit waste, bread, muesli, protein powders,
+                            and various snack materials. Each formulation is designed to meet
                             specific nutritional requirements and budget considerations.
                         </p>
                     </div>
 
+                    {/* Product Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                         {products.map((product) => (
-                            <div key={product.name} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                            <div
+                                key={product.name}
+                                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                            >
                                 <div className="relative h-48">
-                                    <img
-                                        src={product.image}
-                                        alt={product.name}
-                                        className="w-full h-full object-cover"
-                                    />
+
+                                    {product.isVideo ? (
+                                        <video
+                                            src={product.video}
+                                            className="w-full h-full object-cover"
+                                            autoPlay
+                                            muted
+                                            loop
+                                            playsInline
+                                            controls
+                                        />
+                                    ) : (
+                                        <img
+                                            src={product.image}
+                                            alt={product.name}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    )}
+
                                     <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                                         {product.category}
                                     </div>
+
                                 </div>
+
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-2 text-gray-800">{product.name}</h3>
-                                    <p className="text-gray-600 mb-4">{product.description}</p>
+                                    <h3 className="text-xl font-bold mb-2 text-gray-800">
+                                        {product.name}
+                                    </h3>
+
+                                    <p className="text-gray-600 mb-4">
+                                        {product.description}
+                                    </p>
                                 </div>
                             </div>
                         ))}
                     </div>
 
+                    {/* Large Video Section */}
+                    <div className="mb-16">
+                        <div className="text-center mb-8">
+                            <h2 className="text-3xl font-bold mb-4 text-gray-800">
+                                Our Feed Production Process
+                            </h2>
+
+                            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                                Take a closer look at our feed production process and
+                                see how we prepare high-quality cattle feed mixes.
+                            </p>
+                        </div>
+
+
+<div className="w-full rounded-xl overflow-hidden shadow-xl bg-black">
+    <div className="aspect-video flex items-center justify-center overflow-hidden">
+        <video
+            src="/feed_video.mp4"
+            className="h-full w-full object-contain rotate-90 scale-[1.78]"
+            autoPlay
+            muted
+            loop
+            playsInline
+        />
+    </div>
+</div>
+                   </div>
+
+                    {/* Why Choose Our Feed Mix */}
                     <div className="bg-green-700 text-white p-8 rounded-lg">
-                        <h3 className="text-2xl font-bold mb-6 text-center">Why Choose Our Feed Mix?</h3>
+                        <h3 className="text-2xl font-bold mb-6 text-center">
+                            Why Choose Our Feed Mix?
+                        </h3>
+
                         <div className="grid md:grid-cols-3 gap-8">
+
                             <div className="text-center">
-                                <h4 className="text-xl font-semibold mb-3">Superior Ingredients</h4>
+                                <h4 className="text-xl font-semibold mb-3">
+                                    Superior Ingredients
+                                </h4>
+
                                 <p className="text-green-100">
-                                    Quality biscuit waste, bread, muesli, and snack materials ensure optimal nutrition
+                                    Quality biscuit waste, bread, muesli, and snack materials
+                                    ensure optimal nutrition
                                 </p>
                             </div>
+
                             <div className="text-center">
-                                <h4 className="text-xl font-semibold mb-3">Custom Formulations</h4>
+                                <h4 className="text-xl font-semibold mb-3">
+                                    Custom Formulations
+                                </h4>
+
                                 <p className="text-green-100">
-                                    Tailored protein levels and ingredients to match your specific requirements
+                                    Tailored protein levels and ingredients to match your
+                                    specific requirements
                                 </p>
                             </div>
+
                             <div className="text-center">
-                                <h4 className="text-xl font-semibold mb-3">Consistent Quality</h4>
+                                <h4 className="text-xl font-semibold mb-3">
+                                    Consistent Quality
+                                </h4>
+
                                 <p className="text-green-100">
-                                    Strict quality control ensures every batch meets our high standards
+                                    Strict quality control ensures every batch meets our
+                                    high standards
                                 </p>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </section>
         </>
