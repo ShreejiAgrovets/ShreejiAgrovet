@@ -4,7 +4,7 @@ export default function SustainabilityPage() {
     return (
         <>
             <Hero
-                title="Environmental Responsibility at Purvam"
+                title="Environmental Responsibility at Shreeji"
                 subtitle="Sustainable cattle feed production with zero waste philosophy"
                 backgroundImage="/sustainable_bg.jpg"
             />
@@ -14,7 +14,7 @@ export default function SustainabilityPage() {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold mb-4 text-gray-800">Our Environmental Commitment</h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            At Purvam Overseas, we believe in sustainable business practices that protect our planet while delivering premium cattle feed solutions.
+                            At Shreeji Agrovet, we believe in sustainable business practices that protect our planet while delivering premium cattle feed solutions.
                             Our environmental responsibility goes beyond compliance – it's at the core of everything we do.
                         </p>
                     </div>

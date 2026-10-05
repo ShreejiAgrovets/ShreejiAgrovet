@@ -4,7 +4,7 @@ export default function FeedManufacturerPage() {
     return (
         <>
             <Hero
-                title="Partner with Purvam for Feed Manufacturing"
+                title="Partner with Shreeji for Feed Manufacturing"
                 subtitle="Premium bulk cattle feed mix solutions for large-scale feed manufacturers"
                 backgroundImage="/partnership_bg.jpg"
             />
@@ -22,7 +22,7 @@ export default function FeedManufacturerPage() {
                     
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                         <div>
-                            <h3 className="text-2xl font-bold mb-6 text-green-700">Why Partner with Purvam?</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-green-700">Why Partner with Shreeji?</h3>
                             <ul className="space-y-4">
                                 <li className="flex items-start">
                                     <span className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
@@ -99,7 +99,7 @@ export default function FeedManufacturerPage() {
                     <div className="text-center">
                         <h3 className="text-2xl font-bold mb-6 text-gray-800">Ready to Scale Your Production?</h3>
                         <p className="text-lg text-gray-600 mb-8">
-                            Join leading feed manufacturers who trust Purvam Overseas for their bulk cattle feed mix requirements. 
+                            Join leading feed manufacturers who trust Shreeji Agrovet for their bulk cattle feed mix requirements. 
                             Contact us to discuss your manufacturing needs and discover our partnership benefits.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

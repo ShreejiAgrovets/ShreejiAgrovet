@@ -5,7 +5,7 @@ export default function AboutPage() {
     return (
         <>
             <Hero
-                title="About Purvam Overseas"
+                title="About Shreeji Agrovet"
                 subtitle="Premium cattle feed mix manufacturer serving India's livestock industry"
                 backgroundImage="/bg3.jpg"
             />
@@ -16,7 +16,7 @@ export default function AboutPage() {
                         <div>
                             <h2 className="text-3xl font-bold mb-6 text-gray-800">Our Story</h2>
                             <p className="text-lg text-gray-600 mb-4">
-                                Purvam Overseas is a leading manufacturer of premium cattle feed mix, specializing in highly nutritious, protein-rich formulations for India's cattle feed producers. We transform quality ingredients into superior feed solutions that drive optimal livestock growth and productivity.
+                                Shreeji Agrovet is a leading manufacturer of premium cattle feed mix, specializing in highly nutritious, protein-rich formulations for India's cattle feed producers. We transform quality ingredients into superior feed solutions that drive optimal livestock growth and productivity.
                             </p>
                             <p className="text-lg text-gray-600 mb-4">
                                 Our expertise lies in creating customized feed blends using premium biscuit waste, bread, muesli, protein powders, and various snack materials. Each formulation is carefully crafted to meet specific nutritional requirements and budget considerations.

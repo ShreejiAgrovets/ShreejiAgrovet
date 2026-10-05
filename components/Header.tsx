@@ -9,15 +9,17 @@ export default function Header() {
     return (
         <header className="fixed w-full z-50 top-0 bg-green-600 text-white shadow">
             <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
-                <span className="font-bold text-xl md:text-2xl">
-                    <Image
-                        src="/Purvam_Logo.png"
-                        alt="Purvam Overseas"
-                        width={270}
-                        height={90}
-                    />
-                </span>
-                
+
+<span className="flex items-center gap-3 font-bold text-xl md:text-2xl text-black">
+  <Image
+    src="/shreeji_logo.png"
+    alt="Shreeji Agrovets"
+    width={55}
+    height={55}
+    className="rounded-full object-cover"
+  />
+  <span>Shreeji Agrovet</span>
+</span>
                 {/* Mobile menu button */}
                 <button 
                     className="md:hidden flex flex-col space-y-1"

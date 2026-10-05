@@ -14,7 +14,7 @@ export default function FeedProducerPage() {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold mb-4 text-gray-800">Feed Producer Solutions</h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            Purvam Overseas provides comprehensive cattle feed solutions for feed producers across India.
+                            Shreeji Agrovet provides comprehensive cattle feed solutions for feed producers across India.
                             Our high-quality, cost-effective feed mixes help you optimize livestock nutrition while maintaining
                             competitive pricing and reliable supply chains.
                         </p>
@@ -123,7 +123,7 @@ export default function FeedProducerPage() {
                     <div className="text-center">
                         <h3 className="text-2xl font-bold mb-6 text-gray-800">Optimize Your Feed Production</h3>
                         <p className="text-lg text-gray-600 mb-8">
-                            Partner with Purvam Overseas to enhance your cattle feed production with premium, cost-effective solutions.
+                            Partner with Shreeji Agrovet to enhance your cattle feed production with premium, cost-effective solutions.
                             Our expert team is ready to help you choose the right formulations for your specific needs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
