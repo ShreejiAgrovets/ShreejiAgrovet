@@ -42,9 +42,9 @@ const products = [
         category: 'Custom'
     },
     {
-        name: 'Feed Production Video',
+        name: 'Biscuit Mix',
         description:
-            'See our cattle feed mix production process in action.',
+            'See our raw materials used for cattle feed mix production in action.',
         video: '/biscuit_video.mp4',
         category: 'Video',
         isVideo: true
