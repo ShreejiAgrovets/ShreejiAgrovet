@@ -5,7 +5,7 @@ import '../styles/globals.css'
 
 
 export const metadata = {
-    title: 'Purvam Overseas - Cattle Feed & Agricultural Products',
+    title: 'Shreeji Agrovet - Cattle Feed & Agricultural Products',
     description: 'Ahmedabad based company, exporting high-quality cattle feed and agricultural products. We provide our customers with the best products to meet their livestock nutrition needs.',
 }
 
